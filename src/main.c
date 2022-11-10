@@ -28,10 +28,13 @@ int main() {
     int inputAge;
     scanf("%d",&inputAge);
 
-    printf("Your name is %s and your age is %d",inputName,inputAge);
+    printf("Your name is %s and your age is %d, which is  ",inputName,inputAge);
 
-
-
+    if(inputAge >= 18){
+        printf("old");
+    }else{
+        printf("young");
+    }
 
     return 0;
 }
