@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "test.h"
 
 int main() {
@@ -18,7 +16,20 @@ int main() {
     printf("%s is %d years old\n",name,age);
 
     //MYNAME and AGE is defined in test.h
-    printf("%s is %d years old\n",MYNAME,AGE);
+    printf("%s is %d years old\n\n\n",MYNAME,AGE);
+
+
+
+    printf("Write your name:\n");
+    char inputName[20];
+    scanf("%s", inputName);
+
+    printf("Write your age:\n");
+    int inputAge;
+    scanf("%d",&inputAge);
+
+    printf("Your name is %s and your age is %d",inputName,inputAge);
+
 
 
 
